@@ -20,21 +20,22 @@ a:hover{
 }
 
 .pagegrid {
-    width: 1920px;
+    width: 1280px;
     height: 100vh;
     margin: auto;
 
     display: grid;
     grid-template-areas: 
     "left right";
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 1fr 3fr;
 }
 
 .sidebar {
-    width: 385px;
-    height: 1079px;
+    width: 287px;
+    height: 800px;
     grid-area: left;
     background-color: #bdd505;
+    position: fixed;
 }
 
 .sidebar-logo {
@@ -44,54 +45,356 @@ a:hover{
 }
 
 .sidebar-about {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 700;
     margin: auto;
-    margin-top: 153px;
+    margin-top: 133px;
     text-align: center;
 }
 
 .sidebar-resume {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 700;
     margin: auto;
-    margin-top: 79px;
+    margin-top: 49px;
     text-align: center;
 }
 
 .sidebar-contact {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 700;
     margin: auto;
-    margin-top: 79px;
+    margin-top: 49px;
     text-align: center;
 }
 
 .sidebar-copyright {
-    font-size: larger;
+    font-size: medium;
     font-weight: 400;
     margin: auto;
-    margin-top: 267px;
+    margin-top: 147px;
     color: gray;
     text-align: center;
 }
 
 .main {
-    width: 385px;
-    height: 1079px;
+    width: 993px;
+    height: 800px;
     grid-area: right; 
 }
 
 .main-top {
-    width: 1535px;
-    height: 196px;
+    width: 993px;
+    height: 146px;
     margin: auto;
     background-color: #304798;
 }
 
 .main-top-name {
-    font-size: 3em;
+    font-size: 7em;
     color: white;
+    margin: auto;
+    margin-left: 200px;
+}
+
+.main-title {
+    font-size: 3em;
+    color: #304798;
+    margin: auto;
+    margin-left: 413px;
+}
+
+.main-pages {
+    width: 907px;
+    height: 568px;
+    margin: auto;
+    margin-left: 15px;
+    text-align: center;
+
+    display: grid;
+    grid-template-areas: 
+    "web graphic"
+    "drawings painting";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.main-pages-web {
+    width: 400px;
+    height: 271px;
+    grid-area: web;
     text-align: center;
     margin: auto;
+}
+
+.main-pages-web-text {
+    font-size: larger;
+    margin: auto;
+    margin-top: 14px;
+}
+
+.main-pages-graphic {
+    width: 400px;
+    height: 271px;
+    grid-area: graphic;
+    text-align: center;
+    margin: auto;
+}
+
+.main-pages-graphic-text {
+    font-size: larger;
+    margin: auto;
+    margin-top: 14px;
+}
+
+.main-pages-drawing {
+    width: 400px;
+    height: 271px;
+    grid-area: drawings;
+    text-align: center;
+    margin: auto;
+}
+
+.main-pages-drawing-text {
+    font-size: larger;
+    margin: auto;
+    margin-top: 14px;
+}
+
+.main-pages-painting {
+    width: 400px;
+    height: 271px;
+    grid-area: painting;
+    text-align: center;
+    margin: auto;
+}
+
+.main-pages-painting-text {
+    font-size: larger;
+    margin: auto;
+    margin-top: 14px;
+}
+
+.categorymain {
+    width: 993px;
+    height: 800px;
+    grid-area: right; 
+}
+
+.categorymain-top {
+    width: 993px;
+    height: 146px;
+    margin: auto;
+    background-color: #304798;
+    position: relative;
+}
+
+.categorymain-top-name {
+    font-size: 7em;
+    color: white;
+    margin: auto;
+    margin-left: 200px;
+}
+
+.one {
+    width: 904px;
+    height: 272px;
+    margin: auto;
+    margin-left: 15px;
+    margin-top: 15px;
+    text-align: center;
+
+    display: grid;
+    grid-template-areas: 
+    "left right";
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.one-left {
+    width: 400px;
+    height: 271px;
+    grid-area: left;
+    margin: auto;
+}
+
+.one-right {
+    width: 400px;
+    height: 271px;
+    grid-area: right;
+    margin: auto;
+}
+
+.two {
+    width: 904px;
+    height: 272px;
+    margin: auto;
+    margin-left: 15px;
+    margin-top: 15px;
+    text-align: center;
+
+    display: grid;
+    grid-template-areas: 
+    "left right";
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.two-left {
+    width: 400px;
+    height: 271px;
+    grid-area: left;
+    margin: auto;
+}
+
+.two-right {
+    width: 400px;
+    height: 271px;
+    grid-area: right;
+    margin: auto;
+}
+
+.three {
+    width: 904px;
+    height: 272px;
+    margin: auto;
+    margin-left: 15px;
+    margin-top: 15px;
+    text-align: center;
+
+    display: grid;
+    grid-template-areas: 
+    "left right";
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.three-left {
+    width: 400px;
+    height: 271px;
+    grid-area: left;
+    margin: auto;
+}
+
+.three-right {
+    width: 400px;
+    height: 271px;
+    grid-area: right;
+    margin: auto;
+}
+
+.bottom {
+    width: 904px;
+    height: 272px;
+    margin: auto;
+    margin-left: 15px;
+    margin-top: 15px;
+    text-align: center;
+
+    display: grid;
+    grid-template-areas: 
+    "left right";
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.bottom-left {
+    width: 400px;
+    height: 271px;
+    grid-area: left;
+    margin: auto;
+}
+
+.bottom-right {
+    width: 400px;
+    height: 271px;
+    grid-area: right;
+    margin: auto;
+}
+
+.contentpagegrid {
+    width: 1280px;
+    height: 100vh;
+    margin: auto;
+
+    display: grid;
+    grid-template-areas: 
+    "left right";
+    grid-template-columns: 1fr 3fr;
+}
+
+.contentmain {
+    width: 907px;
+    height: 568px;
+    margin: auto;
+    margin-left: 15px;
+    text-align: center;
+    grid-area: right;
+
+    display: grid;
+    grid-template-areas: 
+    "left right";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.contentmainimage {
+    width: 516px;
+    height: 712px;
+    grid-area: left;
+}
+
+.contentmain-text {
+    width: 315px;
+    height: 712px;
+    grid-area: right;
+}
+
+.contentmain-text-title {
+    font-size: 2em;
+    color: #304798;
+    text-align: left;
+    margin: auto;
+    margin-bottom: 30px;
+    font-weight: bolder;
+}
+
+.blank {
+    width: 363px;
+    height: 317px;
+    background-color: white;
+    grid-area: right;
+}
+
+.contentmain-text-materials {
+    font-size: 1.5em;
+    color: #d67601;
+    text-align: left;
+}
+
+.contentmain-text-dimensions {
+    font-size: 1.5em;
+    color: #d67601;
+    text-align: left;
+}
+
+.contentmain-text-date {
+    font-size: 1.5em;
+    color: #d67601;
+    text-align: left;
+    font-weight: 200;
+}
+
+.contentmain-text-description {
+    font-size: 1em;
+    color: #d67601;
+    text-align: left;
+}
+
+.contentmain-text-link {
+    font-size: 1.5em;
+    color: #d67601;
+    text-align: left;
 }
