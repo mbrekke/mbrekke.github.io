@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+body {
+    width: 100vw;
+    font-family: "Merriweather";
+    background-color: white;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+}
+
+a:hover{
+    color: #d67601;
+}
+
+.pagegrid {
+    width: 1920px;
+    height: 100vh;
+    margin: auto;
+
+    display: grid;
+    grid-template-areas: 
+    "left right";
+    grid-template-columns: 1fr, 1fr;
+}
+
+.sidebar {
+    width: 385px;
+    height: 1079px;
+    grid-area: left;
+    background-color: #bdd505;
+}
+
+.sidebar-logo {
+    margin: auto;
+    margin-top: 73px;
+    text-align: center;
+}
+
+.sidebar-about {
+    font-size: 2em;
+    font-weight: 700;
+    margin: auto;
+    margin-top: 153px;
+    text-align: center;
+}
+
+.sidebar-resume {
+    font-size: 2em;
+    font-weight: 700;
+    margin: auto;
+    margin-top: 79px;
+    text-align: center;
+}
+
+.sidebar-contact {
+    font-size: 2em;
+    font-weight: 700;
+    margin: auto;
+    margin-top: 79px;
+    text-align: center;
+}
+
+.sidebar-copyright {
+    font-size: larger;
+    font-weight: 400;
+    margin: auto;
+    margin-top: 267px;
+    color: gray;
+    text-align: center;
+}
+
+.main {
+    width: 385px;
+    height: 1079px;
+    grid-area: right; 
+}
+
+.main-top {
+    width: 1535px;
+    height: 196px;
+    margin: auto;
+    background-color: #304798;
+}
+
+.main-top-name {
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
